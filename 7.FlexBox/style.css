@@ -1,0 +1,62 @@
+body {
+	background: beige;
+}
+
+.h1{
+	text-align: center;
+}
+
+.flex-container {
+	border: 1px solid black; 
+	display: flex; /*Coloca los elementos uno al lado del otro*/
+	flex-direction: Row; /*Column(columna), Row(horizontal), Reverse(del ultimo al primero)*/
+	flex-wrap: wrap; /*wrap significa que se coloque uno al lado del otro y si se llena se acomodan abajo y no se cambia su tamaño*/
+	/*podemos hacer estas dos lineas en una:
+	Ejemplo:
+		flex-flow: row wrap;
+	*/
+	justify-content: space-between;/*Aca podemos centrar, acomodar, etc*/
+	align-items: center;/*podemos centrar los elementos, no se expandiran a todo el largo de la pantalla sino que toman el tamaño adecuado*/
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.caja {
+	border: 1px solid black;
+	background-color: white;
+	color: black; /*Color a la letra*/
+	font-family: Courier New , Courier, monospace;
+	font-weight: bold;
+	width: 120px;/*Altura a cada caja*/
+	height: 120px; 
+	line-height: 120px;
+	text-align: center;/*Centrar la linea de texto verticalmente*/
+	margin: 5px;
+}
+
+/*Tenemos la posibilidad de ordenar las cajas como queramos, con todo elemento que esta eb un flex-container*/
+
+
+.c1{
+	background: blue;
+	order: 2;
+	flex-grow: 2; /*Te da una prioridad de darle mas ancho sobre otra caja*/
+	flex-basis: 50%; /*Te da la posiblidad de darle que ocupe esta caja el 50% de la pantalla(tenemos que ponerle en flex-grow: 1 a todos los elemenots antes*/
+}
+.c2{
+	background: red;
+	order: 1;
+	flex-grow: 1;
+}
+.c3{
+	background: yellow;
+	order: 4;
+	flex-grow: 3;
+}
+.c4{
+	background: green;
+	order: 3;
+	flex-grow: 5;
+}
+/**/

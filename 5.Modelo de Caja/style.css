@@ -1,0 +1,50 @@
+/* Si queremos agregar un valor a todoooo el css usamos un *. 
+	Ejemplo:
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	Los elementos se solapan, si queremos que los valores de margin se sumen deberiamos agregar 
+	display: inline-block;
+ */
+
+*{
+		margin: 0;
+		padding: 0;
+	}
+
+.primer{
+	background-color: lightcoral;
+	padding-top: 5px; /*Superior*/
+	padding-right: 10px; /*a la derecha*/
+	padding-left: 10px; /*a la izquierda*/
+	padding-bottom: 10px; /*Abajo*/
+	padding: 5px 10px 15px 20px; /*Esto se puede hacer en una sola linea, recuerda que gira a la auja del reloj, comienza por arriba, derecha, abajo e izquierda*/
+	border: 5px solid blue; /*Agregamos un borde, con tamaño y color*/
+	margin: 15px; /*Este margin se agrega a los 4 lados, sino tenemos que hacer -top,-right-bottom y -left como padding*/
+	width: 50px; /*Ancho*/
+	height: 75px; /*Altura*/
+	display: inline-block;
+}
+.segundo{
+	background-color: lightseagreen;
+	padding-top: 5px; /*Superior*/
+	padding-right: 10px; /*a la derecha*/
+	padding-left: 10px; /*a la izquierda*/
+	padding-bottom: 10px; /*Abajo*/
+	padding: 5px 10px 15px 20px; /*Esto se puede hacer en una sola linea, recuerda que gira a la auja del reloj, comienza por arriba, derecha, abajo e izquierda*/
+	border: 5px solid blue; /*Agregamos un borde, con tamaño y color*/
+	margin: 15px; /*Este margin se agrega a los 4 lados, sino tenemos que hacer -top,-right-bottom y -left como padding*/
+	width: 50px; /*Ancho*/
+	height: 75px; /*Altura*/
+}
+.span-primer{
+	background-color: lightcoral;
+}
+.span-segundo{
+	background-color: lightseagreen;
+}
+
+/**/

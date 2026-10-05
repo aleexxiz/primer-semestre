@@ -1,0 +1,48 @@
+.cuadrado {
+	background-color: blue;
+	width: 100px;
+	height: 200px;
+	position: fixed; /*El position fixed hace que el elemento quede fijo en la pantalla, siempre se muestra en pantalla*/
+	/*Si queremos ponerlo en otra posicion usamos top, left bottom right*/
+	left: 50px;
+	top: 200px;
+}
+
+.cuadrado-relative{
+	width: 100px;
+	height: 200px;
+	background: yellow;
+	position: relative; /*Este lo posicionamos en un lugar sin que este fijo*/
+	left: 200px;
+
+}
+
+.cuadrado-absolute{
+	width: 200px;
+	height: 200px;
+	background: green;
+	position: absolute; /*Este lo posicionamos en un lugar sin que este fijo*/
+	left: 500px;
+
+}
+
+/*Si queremos agregar un elemento en base a otro elemento hay que usar positiioon absolute*/
+
+.rectangulo{
+	width: 150px;
+	height: 250px;
+	background: cyan;
+	top: 0px;
+	left: 250px;
+	position: relative;
+}
+
+.circulo{
+	width: 20px;
+	height: 20px;
+	background: brown;
+	border-radius: 50%;
+	position: absolute;
+	left: 0px;/*Para mover el circulo lo movemos con left y top*/
+	top: 40px;
+}

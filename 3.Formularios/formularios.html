@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<meta charset="UTF-8
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" Nose que poner aqui ">
+	<meta name="author" content="Alexis">
+	<title>Etiquetas Meta</title>
+</head>
+
+<body>
+	<h1> Formularios </h1>
+
+	<!--Primero la etiqueta form -->
+	<!--El action recibe como valor una URL que se encarga de procesar los datos del formulario-->
+	<!-- <form action="ejemplo.php"> este ejemplo.php va a ser el que va a procesar todos los datos que enviemos en el fomrulario-->
+	
+	<form>
+			<label for="nombre-para-label">Escribe tu nombre:</label>
+			<!--Todos los campos son <input> que son entrada y reciben un atributo en type-->
+			<input type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre-para-label" class="">
+			<br>
+			<label for="contrasena">Escribe tu contraseña:</label>
+			<!--Para poner un maximo de caracteres usamos maxlenght="numero"-->
+			<input type="password" id="contrasena">
+			<br>
+			<label for="correo">Escribe tu Correo:</label>
+			<input type="email" id="correo">
+			<br>
+			<label>Selecciona tu genero:</label>
+			<!--Este checkbox nos permite agregar una casilla-->
+			<input type="checkbox" name="" id="">Hombre
+			<input type="checkbox" name="" id="">Mujer
+			<!--Esta etiqueta radio selecciona uno u otro-->
+			<br>
+			<label>Selecciona una opcion:
+				<br>
+				<input type="radio" name="opcion" value="uno" checked>Opcion Uno
+			</label>
+			<br>
+			<label>
+				<input type="radio" name="opcion" value="dos">Opcion Dos
+			</label>
+			<br>
+			<input type="button" value="Enviar">
+			<br>
+			<!--Este botton si envia los datos, dependiendo el atributo que le pusimos al inicio del <form> -->
+			<input type="submit" value="Enviar Formulario">
+			<br>
+			<!--Este select nos permite crear listas, este menu es desplegables-->
+			<label for="paises">Selecciona tu pais en menu desplegable: </label>
+			<select name="" id="paises">
+				<option value="Uruguay">Uruguay</option>
+				<option value="Argentina">Argentina</option>
+				<option value="Brasil">Brasil</option>
+			</select>
+			<br>
+			<!--Este select nos permite crear listas, este menu es multiple-->
+			<label for="paises2">Selecciona tu pais en menu multiple: </label>
+			<select name="" id="paises2" size="3">
+				<option value="Uruguay">Uruguay</option>
+				<option value="Argentina">Argentina</option>
+				<option value="Brasil">Brasil</option>
+			</select>
+			
+			
+			<br>
+			<input type="color" name="" id="">
+			<br>
+			<input type="range" name="" id="">
+			<br>
+	</form>
+</body>
+
+</html>
